@@ -17,7 +17,7 @@ script:
 
 after_success:
 - set -e;
-- "./test/test.sh coveralls.py"
+# - "./test/test.sh coveralls.py"
 - if [ -z "$DOCKER_PASS" ] ; then echo "This is a build triggered by an external PR.
   Skipping docker push."; exit 0; fi;
 - echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin;
