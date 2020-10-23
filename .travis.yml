@@ -7,7 +7,7 @@ jdk:
 install: true
 
 env:
-- GROUP=fjudith COMMIT=$TRAVIS_COMMIT TAG=$TRAVIS_TAG REPO=shipping;
+- GROUP=weaveworksdemos COMMIT=$TRAVIS_COMMIT TAG=$TRAVIS_TAG REPO=shipping;
 
 script:
 - set -e
